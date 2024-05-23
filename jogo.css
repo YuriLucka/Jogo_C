@@ -1,0 +1,97 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(rgb(61, 61, 61),rgb(23, 63, 11));
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#titulo{
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+#regras{
+    background-color: white;
+    text-align: justify;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2em;
+    max-width: 400px;
+}
+
+.notificacao{
+    display: none;
+    background-color: rgb(255, 128, 128);
+    text-align: justify;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2em;
+    max-width: 400px;
+}
+
+.container_jogo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.205);
+    padding: 20px;
+    max-width: 400px;
+}
+
+.container_campos{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+label{
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+input{
+    padding: 10px 15px;
+    text-align: center;
+    width: 100%;
+    border-radius: 3px;
+    border: solid 2px rgba(0, 0, 0, 0.315);
+}
+
+input:focus{
+    border: solid 2px rgb(99, 165, 0);
+    box-shadow: 0 0 4px rgb(99, 165, 0);
+}
+
+button{
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.campo_tentativas{
+    max-width: 400px;
+    border: solid 2px white;
+    height: 100%;
+}

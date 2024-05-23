@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css"> 
+    <link rel="stylesheet" href="jogo.css">
+    <script defer src="script.js"></script>
+    <title>Jogo</title>
+</head>
+<body>
+    <form class="formulario">
+        <h1 id="titulo">Informações</h1>
+        <p id="regras">
+            <b>Bem-vindo ao Jogo!</b><br><br>
+            <b>Objetivo:</b><br>
+            Tente adivinhar o número secreto gerado aleatoriamente dentro de um intervalo definido por você.<br> O número de tentativas também será definido por você.
+        </p>
+        <span class="notificacao"></span>
+        <div class="container_jogo">
+            <div class="container_campos">
+                <label for="inicio">Inicio</label>
+                <input type="number" id="inicio" min="0" pattern="^-?\d+$" required>
+            </div>
+            <div class="container_campos">
+                <label for="fim">Fim</label>
+                <input type="number" id="fim" min="0" pattern="^-?\d+$" required>
+            </div>
+            <div class="container_campos">
+                <label for="tentativas">Tentativas</label>
+                <input type="number" id="tentativas" min="1" title="Por favor, insira um número inteiro positivo" required>
+            </div>
+        </div>
+        <div class="container_campos">
+            <button id="confirmar">Confirmar</button>
+        </div>
+    </form>
+</body>
+</html>
